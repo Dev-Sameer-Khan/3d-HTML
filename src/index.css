@@ -79,13 +79,9 @@ canvas {
   opacity: 1;
 }
 
-/*/ 
-  /* Responsive: Adjust details and intro for small screens */
   @media (max-width: 650px) {
 
     .details-hidden {
       width: 88vw !important;
     }
   }
-
-/*/
