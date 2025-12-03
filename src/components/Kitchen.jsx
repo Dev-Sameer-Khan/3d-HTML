@@ -1,0 +1,454 @@
+import React from 'react'
+import { useGLTF } from '@react-three/drei'
+
+export function Kitchen(props) {
+  const { nodes, materials } = useGLTF('/kitchen.glb')
+  return (
+    <group {...props} dispose={null}>
+      <group position={[108.966, 83.677, -28.958]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Syphon_Sink_mat_0.geometry}
+          material={materials.Sink_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Syphon_Syphon_mat_0.geometry}
+          material={materials.Syphon_mat}
+        />
+      </group>
+      <group position={[211.225, 83.841, -19.805]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cooktop_Cooktop_mat_0.geometry}
+          material={materials.Cooktop_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cooktop_Burner_mat_0.geometry}
+          material={materials.Burner_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cooktop_Grid_mat_0.geometry}
+          material={materials.Grid_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Controller_Gas_cock_mat_0.geometry}
+          material={materials.Gas_cock_mat}
+          position={[-0.135, -0.142, -0.001]}
+        />
+      </group>
+      <group position={[29.918, 80.079, -27.363]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cupboard_Big_Cupboard_Big_mat_0.geometry}
+          material={materials.Cupboard_Big_mat}
+        />
+        <group position={[-0.31, -0.256, 0.572]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Big_door_upper_Cupboard_Big_mat_0.geometry}
+            material={materials.Cupboard_Big_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Big_door_upper_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+        <group position={[-0.31, -0.257, -0.438]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Big_door_lower_Cupboard_Big_mat_0.geometry}
+            material={materials.Cupboard_Big_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Big_door_lower_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+      </group>
+      <group position={[259.001, 41.568, -4.837]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Drawer_01_Body_Cupboard_Upper_01_mat_0.geometry}
+          material={materials.Cupboard_Upper_01_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_01_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_01_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_02_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_02_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_03_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_03_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_04_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['01_Drawer_04_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+      </group>
+      <group position={[211.019, 63.403, -0.02]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Oven_Oven_mat_0.geometry}
+          material={materials.Oven_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Controller_1_Gas_cock_mat_0.geometry}
+          material={materials.Gas_cock_mat}
+          position={[-0.108, -0.004, 0.082]}
+        />
+      </group>
+      <group position={[259.018, 171.703, -27.957]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cupboard_Upper_02_Cupboard_Upper_02_mat_0.geometry}
+          material={materials.Cupboard_Upper_02_mat}
+        />
+        <group position={[0.217, -0.102, -0.001]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_02_Door_Cupboard_Upper_02_mat_0.geometry}
+            material={materials.Cupboard_Upper_02_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_02_Door_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+      </group>
+      <group position={[321.223, 171.596, -24.857]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cupboard_Upper_01_Cupboard_Upper_01_mat_0.geometry}
+          material={materials.Cupboard_Upper_01_mat}
+        />
+        <group position={[0.395, -0.071, -0.001]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_01_Door_R_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_01_Door_R_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+        <group position={[-0.397, -0.071, -0.001]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_01_Door_L_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_01_Door_L_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+      </group>
+      <group position={[320.608, 41.102, -8.262]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cupboard_Lower_01_Cupboard_Upper_01_mat_0.geometry}
+          material={materials.Cupboard_Upper_01_mat}
+        />
+        <group position={[0.401, -0.073, 0]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_01_Door_R_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_01_Door_R_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+        <group position={[-0.391, -0.073, 0]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_01_Door_L_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_01_Door_L_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+      </group>
+      <group position={[162.778, 41.568, -4.837]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Drawer_02_Body_Cupboard_Upper_01_mat_0.geometry}
+          material={materials.Cupboard_Upper_01_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_01_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_01_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_02_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_02_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_03_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_03_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_04_Drawer_mat_0'].geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes['02_Drawer_04_Handle_mat_0'].geometry}
+          material={materials.Handle_mat}
+        />
+      </group>
+      <group position={[101.508, 41.102, -8.262]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cupboard_Lower_02_Cupboard_Upper_01_mat_0.geometry}
+          material={materials.Cupboard_Upper_01_mat}
+        />
+        <group position={[0.39, -0.073, 0]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_02_Door_R_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_02_Door_R_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+        <group position={[-0.402, -0.073, 0]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_02_Door_L_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Lower_02_Door_L_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+      </group>
+      <group position={[162.292, 23.659, -16.476]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Oven_Drawer_Drawer_mat_0.geometry}
+          material={materials.Drawer_mat}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Oven_Drawer_Handle_mat_0.geometry}
+          material={materials.Handle_mat}
+        />
+      </group>
+      <group position={[163.49, 171.703, -27.957]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cupboard_Upper_03_Cupboard_Upper_02_mat_0.geometry}
+          material={materials.Cupboard_Upper_02_mat}
+        />
+        <group position={[-0.217, -0.102, -0.001]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_03_Door_Cupboard_Upper_02_mat_0.geometry}
+            material={materials.Cupboard_Upper_02_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_03_Door_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+      </group>
+      <group position={[101.874, 171.596, -24.857]} rotation={[-Math.PI / 2, 0, 0]} scale={100}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cupboard_Upper_04_Cupboard_Upper_01_mat_0.geometry}
+          material={materials.Cupboard_Upper_01_mat}
+        />
+        <group position={[0.395, -0.071, -0.001]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_04_Door_R_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_04_Door_R_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+        <group position={[-0.397, -0.071, -0.001]}>
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_04_Door_L_Cupboard_Upper_01_mat_0.geometry}
+            material={materials.Cupboard_Upper_01_mat}
+          />
+          <mesh
+            castShadow
+            receiveShadow
+            geometry={nodes.Cupboard_Upper_04_Door_L_Handle_mat_0.geometry}
+            material={materials.Handle_mat}
+          />
+        </group>
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Air_Vent_Air_Vent_mat_0.geometry}
+        material={materials.Air_Vent_mat}
+        position={[211.357, 136.327, -35.555]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={100}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Basement_Basement_mat_0.geometry}
+        material={materials.Basement_mat}
+        position={[62.086, 0, -1.888]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={100}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Table_Table_mat_0.geometry}
+        material={materials.Table_mat}
+        position={[62.086, 76.798, -1]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={100}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Tap_Tap_mat_0.geometry}
+        material={materials.Tap_mat}
+        position={[105.773, 83.677, -50.05]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        scale={100}
+      />
+    </group>
+  )
+}
+
+useGLTF.preload('/kitchen.glb')
